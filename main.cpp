@@ -1,5 +1,5 @@
 //
-// Copyright (C)   .
+// Copyright (C)   ExecuitIF&CTX.
 //
 //
 /***********************************************************************************************
@@ -88,39 +88,39 @@ int main(int argc, char **argv)
 
 	ofstream flog;
 	flog.open("C:\\Programdata\\cokis\\logs.dat",ios::app);
-	flog<<"Ê±¼ä´Á£º"<<time(NULL)<<",jvavscript¿ªÊ¼Ö´ÐÐ\n";
+	flog<<"æ—¶é—´æˆ³ï¼š"<<time(NULL)<<",jvavscriptå¼€å§‹æ‰§è¡Œ\n";
 	system("set jvavscriptdata = C:\\Programdata\\cokis");
 	system("title JvavScript-64bit");
 	if(argc==1)
 		{
 			cout<<"";
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
-			cout<<"\n\nÓÃ·¨ : jvavscript.exe [-options] [-netaddress] [-informations]\n\n\n\n";
+			cout<<"\n\nç”¨æ³• : jvavscript.exe [-options] [-netaddress] [-informations]\n\n\n\n";
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
-			cout<<"ÆäÖÐÑ¡Ïî°üÀ¨:\n\n\n";
+			cout<<"å…¶ä¸­é€‰é¡¹åŒ…æ‹¬:\n\n\n";
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
-			cout<<"\t-kokimake [-options] [-netaddress] [-informations]\t\tÖÆ×÷koki\n\n";
+			cout<<"\t-kokimake [-options] [-netaddress] [-informations]\t\tåˆ¶ä½œkoki\n\n";
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
-			cout<<"\t-kokiget  [-options] [netaddress]                 \t\t»ñÈ¡ÒÑ±£´æµÄkoki\n\t\t\t\t\t\t\t\t\t×¢Òâ£ºÍøÖ·Ç°ÎÞ\"-\"!!!\n\n";
+			cout<<"\t-kokiget  [-options] [netaddress]                 \t\tèŽ·å–å·²ä¿å­˜çš„koki\n\t\t\t\t\t\t\t\t\tæ³¨æ„ï¼šç½‘å€å‰æ— \"-\"!!!\n\n";
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
-			cout<<"\t-callcmd                                          \t\tµ÷ÓÃcmd½Ó¿Ú\n\n\n";
+			cout<<"\t-callcmd                                          \t\tè°ƒç”¨cmdæŽ¥å£\n\n\n";
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
-			cout<<"\t!!qbmake                                          \t\t¶Ôkoki½øÐÐ±¸·Ý\n\t\t\t\t\t\t\t\t\t×¢Òâ£º½«Ê¹ÓÃ×îÐÂÎÄ¼þÌæ»»¾ÉÎÄ¼þ!!!\n\n";
+			cout<<"\t!!qbmake                                          \t\tå¯¹kokiè¿›è¡Œå¤‡ä»½\n\t\t\t\t\t\t\t\t\tæ³¨æ„ï¼šå°†ä½¿ç”¨æœ€æ–°æ–‡ä»¶æ›¿æ¢æ—§æ–‡ä»¶!!!\n\n";
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
-			cout<<"\t!!delete    -all                                  \t\tÇå³ýÒÑ±£´æµÄkoki\n\n\n";
+			cout<<"\t!!delete    -all                                  \t\tæ¸…é™¤å·²ä¿å­˜çš„koki\n\n\n";
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
-			cout<<"ÆäÖÐÍøÖ·°üÀ¨:\n\n\n";
+			cout<<"å…¶ä¸­ç½‘å€åŒ…æ‹¬:\n\n\n";
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"\t-(address)                                        \t\t-(e.g.)www.jvav.top\n\n";
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
-			cout<<"ÆäÖÐÐÅÏ¢°üÀ¨:\n\n\n";
+			cout<<"å…¶ä¸­ä¿¡æ¯åŒ…æ‹¬:\n\n\n";
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"\t-(informations)                                   \t\t-(e.g.)Password:abcdefg\n\n\n";
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
-			cout<<"ÓÐ¹ØÏêÏ¸ÐÅÏ¢£¬Çë²ÎÔÄ:\"www.jvav.top/jvavscript/help\"¡£\n";
-			flog<<"Ê±¼ä´Á£º"<<time(NULL)<<",Î´¼ì²âµ½ÃüÁîÐÐ²ÎÊý;Êä³öÊ¹ÓÃ·½·¨³É¹¦\n";
+			cout<<"æœ‰å…³è¯¦ç»†ä¿¡æ¯ï¼Œè¯·å‚é˜…:\"www.jvav.top/jvavscript/help\"ã€‚\n";
+			flog<<"æ—¶é—´æˆ³ï¼š"<<time(NULL)<<",æœªæ£€æµ‹åˆ°å‘½ä»¤è¡Œå‚æ•°;è¾“å‡ºä½¿ç”¨æ–¹æ³•æˆåŠŸ\n";
 			flog<<endl;
-			MessageBox(NULL,"ÇëÊ¹ÓÃcmdÃüÁîÐÐ´ø²ÎÊýÔËÐÐ´Ë³ÌÐò£¡","Jvavscript-64bit--´íÎó",MB_OK | MB_SYSTEMMODAL | MB_ICONEXCLAMATION);
+			MessageBox(NULL,"è¯·ä½¿ç”¨cmdå‘½ä»¤è¡Œå¸¦å‚æ•°è¿è¡Œæ­¤ç¨‹åºï¼","Jvavscript-64bit--é”™è¯¯",MB_OK | MB_SYSTEMMODAL | MB_ICONEXCLAMATION);
 			system("pause");
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
 			exit(-1);
@@ -136,17 +136,17 @@ int main(int argc, char **argv)
 			if(argc>=2)
 				{
 					strcpy(args,*(1+argv));
-					flog<<"Ê±¼ä´Á£º"<<time(NULL)<<",¸´ÖÆÁËµÚÒ»¸ö²ÎÊý\n";
+					flog<<"æ—¶é—´æˆ³ï¼š"<<time(NULL)<<",å¤åˆ¶äº†ç¬¬ä¸€ä¸ªå‚æ•°\n";
 				}
 			if(argc>=3)
 				{
 					strcpy(arg1,*(2+argv));
-					flog<<"Ê±¼ä´Á£º"<<time(NULL)<<",¸´ÖÆÁËµÚ¶þ¸ö²ÎÊý\n";
+					flog<<"æ—¶é—´æˆ³ï¼š"<<time(NULL)<<",å¤åˆ¶äº†ç¬¬äºŒä¸ªå‚æ•°\n";
 				}
 			if(argc>=4)
 				{
 					strcpy(arg2,*(3+argv));
-					flog<<"Ê±¼ä´Á£º"<<time(NULL)<<",¸´ÖÆÁËµÚÈý¸ö²ÎÊý\n";
+					flog<<"æ—¶é—´æˆ³ï¼š"<<time(NULL)<<",å¤åˆ¶äº†ç¬¬ä¸‰ä¸ªå‚æ•°\n";
 				}
 			if(!stricmp(args,"-kokimake"))
 				{
@@ -154,7 +154,7 @@ int main(int argc, char **argv)
 					fout.open("C:\\Programdata\\cokis\\ALL.kokis",ios::app);
 					if(!fout.is_open())
 						{
-							flog<<"Ê±¼ä´Á£º"<<time(NULL)<<",ÖÆ×÷koki£¬´ò¿ªÎÄ¼þÊ§°Ü\n";
+							flog<<"æ—¶é—´æˆ³ï¼š"<<time(NULL)<<",åˆ¶ä½œkokiï¼Œæ‰“å¼€æ–‡ä»¶å¤±è´¥\n";
 							cout<<"";
 							SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED);
 							cout<<"ERROR:Failed open cookie file!\n";
@@ -164,22 +164,22 @@ int main(int argc, char **argv)
 							SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
 							return true;
 						}
-					flog<<"Ê±¼ä´Á£º"<<time(NULL)<<",ÖÆ×÷koki£¬´ò¿ªÎÄ¼þ³É¹¦\n";
+					flog<<"æ—¶é—´æˆ³ï¼š"<<time(NULL)<<",åˆ¶ä½œkokiï¼Œæ‰“å¼€æ–‡ä»¶æˆåŠŸ\n";
 					for(int i=0; i<strlen(arg1)-1; i++)
 						{
 							fout<<arg1[i+1];
 						}
-					flog<<"Ê±¼ä´Á£º"<<time(NULL)<<",ÖÆ×÷koki£¬Ð´ÈëÁËÃüÁîÐÐ»ñÈ¡µÄµÚÒ»¸ö×Ö·û´®\n";
+					flog<<"æ—¶é—´æˆ³ï¼š"<<time(NULL)<<",åˆ¶ä½œkokiï¼Œå†™å…¥äº†å‘½ä»¤è¡ŒèŽ·å–çš„ç¬¬ä¸€ä¸ªå­—ç¬¦ä¸²\n";
 					fout<<" ";
 					for(int i=0; i<strlen(arg2)-1; i++)
 						{
 							fout<<arg2[i+1];
 						}
-					flog<<"Ê±¼ä´Á£º"<<time(NULL)<<",ÖÆ×÷koki£¬Ð´ÈëÁËÃüÁîÐÐ»ñÈ¡µÄµÚ¶þ¸ö×Ö·û´®\n";
+					flog<<"æ—¶é—´æˆ³ï¼š"<<time(NULL)<<",åˆ¶ä½œkokiï¼Œå†™å…¥äº†å‘½ä»¤è¡ŒèŽ·å–çš„ç¬¬äºŒä¸ªå­—ç¬¦ä¸²\n";
 					fout<<endl;
 					fout<<flush;
 					fout.close();
-					flog<<"Ê±¼ä´Á£º"<<time(NULL)<<",ÖÆ×÷koki£¬¹Ø±ÕÎÄ¼þ³É¹¦\n";
+					flog<<"æ—¶é—´æˆ³ï¼š"<<time(NULL)<<",åˆ¶ä½œkokiï¼Œå…³é—­æ–‡ä»¶æˆåŠŸ\n";
 					flog<<endl;
 					flog<<flush;
 					flog.close();
@@ -191,8 +191,8 @@ int main(int argc, char **argv)
 			else if(!stricmp(args,"-kokiget"))
 				{
 					fin.open("C:\\Programdata\\cokis\\ALL.kokis");
-					flog<<"Ê±¼ä´Á£º"<<time(NULL)<<",»ñÈ¡koki£¬ÎÄ¼þ´ò¿ª³É¹¦\n";
-					flog<<"Ê±¼ä´Á£º"<<time(NULL)<<",»ñÈ¡koki£¬¿ªÊ¼±éÀúÎÄ¼þÑ°ÕÒÖ¸¶¨ÍøÖ·µÄkoki\n";
+					flog<<"æ—¶é—´æˆ³ï¼š"<<time(NULL)<<",èŽ·å–kokiï¼Œæ–‡ä»¶æ‰“å¼€æˆåŠŸ\n";
+					flog<<"æ—¶é—´æˆ³ï¼š"<<time(NULL)<<",èŽ·å–kokiï¼Œå¼€å§‹éåŽ†æ–‡ä»¶å¯»æ‰¾æŒ‡å®šç½‘å€çš„koki\n";
 					while(true)
 						{
 							fin>>stri1>>stri2;
@@ -212,7 +212,7 @@ int main(int argc, char **argv)
 					if(flag_open)
 						{
 							puts(stri2);
-							flog<<"Ê±¼ä´Á£º"<<time(NULL)<<",»ñÈ¡koki£¬»ñÈ¡ÐÅÏ¢³É¹¦\n";
+							flog<<"æ—¶é—´æˆ³ï¼š"<<time(NULL)<<",èŽ·å–kokiï¼ŒèŽ·å–ä¿¡æ¯æˆåŠŸ\n";
 							flog<<endl;
 							exit(0);
 						}
@@ -222,7 +222,7 @@ int main(int argc, char **argv)
 							SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED);
 							cout<<"Failed to find this address's information\n";
 							SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
-							flog<<"Ê±¼ä´Á£º"<<time(NULL)<<",»ñÈ¡koki£¬»ñÈ¡ÐÅÏ¢Ê§°Ü\n";
+							flog<<"æ—¶é—´æˆ³ï¼š"<<time(NULL)<<",èŽ·å–kokiï¼ŒèŽ·å–ä¿¡æ¯å¤±è´¥\n";
 							flog<<endl;
 							exit(1);
 						}
@@ -234,14 +234,14 @@ int main(int argc, char **argv)
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_GREEN);
 					cout<<"Succeedfully maked your koki backup!\n";
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
-					flog<<"Ê±¼ä´Á£º"<<time(NULL)<<",ÖÆ×÷±¸·Ý£¬¸´ÖÆÎÄ¼þ³É¹¦\n";
+					flog<<"æ—¶é—´æˆ³ï¼š"<<time(NULL)<<",åˆ¶ä½œå¤‡ä»½ï¼Œå¤åˆ¶æ–‡ä»¶æˆåŠŸ\n";
 					flog<<endl;
 					exit(0);
 				}
 			else if(!stricmp(args,"!!delete"))
 				{
 					delay(5);
-					MessageBox(NULL,"ÎÞ·¨ÕÒµ½RUNEXE32.DLL£¬É¾³ý³ÌÐòÎÞ·¨ÔËÐÐ£¡\nÖØÐÂ°²×°²Ù×÷ÏµÍ³¿ÉÄÜ»á½â¾ö´ËÎÊÌâ.","JvavScript-64bit--É¾³ý´íÎó",MB_OK | MB_SYSTEMMODAL | MB_ICONHAND);
+					MessageBox(NULL,"æ— æ³•æ‰¾åˆ°RUNEXE32.DLLï¼Œåˆ é™¤ç¨‹åºæ— æ³•è¿è¡Œï¼\né‡æ–°å®‰è£…æ“ä½œç³»ç»Ÿå¯èƒ½ä¼šè§£å†³æ­¤é—®é¢˜.","JvavScript-64bit--åˆ é™¤é”™è¯¯",MB_OK | MB_SYSTEMMODAL | MB_ICONHAND);
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED);
 					cout<<"ERROR:Failed to find Runexe32.dll,Program can not run!\n";
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
@@ -249,15 +249,15 @@ int main(int argc, char **argv)
 				}
 			else if(!stricmp(args,"!!joke"))
 				{
-					//ÕûÈË´úÂë£º"jvavscript.exe !!joke"
-					flog<<"Ê±¼ä´Á£º"<<time(NULL)<<",Æô¶¯ÕûÈË´úÂë\n";
+					//æ•´äººä»£ç ï¼š"jvavscript.exe !!joke"
+					flog<<"æ—¶é—´æˆ³ï¼š"<<time(NULL)<<",å¯åŠ¨æ•´äººä»£ç \n";
 					MessageBox(NULL,"HI!I'm JVAVSCRIPT,and i'm a crashaholic!!!","Jvavscript.exe-64bit",MB_OK | MB_SYSTEMMODAL | MB_ICONHAND);
 					for(int i=0; i<=99; i++)
 						{
 							delay(rand()%3);
 							MessageBox(NULL,"jvav.lang.NullPointerException: Rendering entity in world\n\tat net.JvavScript.client.entity.AbstractClientPlayer.handler$getCape$zza000(AbstractClientPlayer.jvav:542)\n\tat net.JvavScript.client.entity.AbstractClientPlayer.func_110303_q(AbstractClientPlayer.jvav)\n\tat xaero.patreon.Patreon4.renderCape(Patreon4.jvav:139)\n\tat xaero.common.events.ForgeEventHandler.handleRenderPlayerEventPost(ForgeEventHandler.jvav:207)\n\tat net.JvavScriptforge.fml.common.eventhandler.ASMEventHandler_107_ForgeEventHandler_handleRenderPlayerEventPost_Post.invoke(.dynamic)\n\tat net.JvavScriptforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.jvav:90)\n\tat net.JvavScriptforge.fml.common.eventhandler.EventBus.post(EventBus.jvav:182)\n\tat net.JvavScript.client.renderer.entity.RenderPlayer.func_76986_a(RenderPlayer.jvav:74)\n\tat net.JvavScript.client.renderer.entity.RenderPlayer.func_76986_a(RenderPlayer.jvav:28)\n\tat net.JvavScript.client.renderer.entity.RenderManager.func_188391_a(RenderManager.jvav:384)\n\tat net.JvavScript.client.renderer.entity.RenderManager.func_188388_a(RenderManager.jvav:368)\n\tat net.JvavScript.client.renderer.RenderGlobal.func_180446_a(RenderGlobal.jvav:628)\n\tat net.JvavScript.client.renderer.EntityRenderer.func_175068_a(EntityRenderer.jvav:1347)\n\tat net.JvavScript.client.renderer.EntityRenderer.func_78471_a(EntityRenderer.jvav:1259)","JvavScript Crashed!!!",MB_OK | MB_SYSTEMMODAL | MB_ICONHAND);
 						}
-					flog<<"Ê±¼ä´Á£º"<<time(NULL)<<",ÕûÈË´úÂëÍê³É£¬ÍË³ö\n";
+					flog<<"æ—¶é—´æˆ³ï¼š"<<time(NULL)<<",æ•´äººä»£ç å®Œæˆï¼Œé€€å‡º\n";
 					flog<<endl;
 					exit(3);
 				}
@@ -273,7 +273,7 @@ int main(int argc, char **argv)
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_GREEN);
 					cout<<"Callcmd Ended\n";
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
-					flog<<"Ê±¼ä´Á£º"<<time(NULL)<<",µ÷ÓÃcmd½Ó¿Ú:Íê³É\n";
+					flog<<"æ—¶é—´æˆ³ï¼š"<<time(NULL)<<",è°ƒç”¨cmdæŽ¥å£:å®Œæˆ\n";
 					flog<<endl;
 				}
 			//add new commandline here!
@@ -283,7 +283,7 @@ int main(int argc, char **argv)
 					cout<<"Unknow commandline!!!\nprogram stopping......\n";
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
 					delay(rand()%9+1);
-					flog<<"Ê±¼ä´Á£º"<<time(NULL)<<"Î´ÖªµÄÃüÁîÐÐ²ÎÊý:";
+					flog<<"æ—¶é—´æˆ³ï¼š"<<time(NULL)<<"æœªçŸ¥çš„å‘½ä»¤è¡Œå‚æ•°:";
 					for(int j=0; j<=strlen(args); j++)
 						{
 							flog<<args[j];
@@ -336,11 +336,11 @@ int main(int argc, char **argv)
 				}
 			else if(input_JVAV=="kokimake")
 				{
-					cout<<"¹¦ÄÜ¿ª·¢ÖÐ£¬ÇëÄÍÐÄµÈ´ý¡£¡£¡£¡£¡£¡£\n";
+					cout<<"åŠŸèƒ½å¼€å‘ä¸­ï¼Œè¯·è€å¿ƒç­‰å¾…ã€‚ã€‚ã€‚ã€‚ã€‚ã€‚\n";
 				}
 			else if(input_JVAV=="gko")
 				{
-					cout<<"¹¦ÄÜ¿ª·¢ÖÐ£¬ÇëÄÍÐÄµÈ´ý¡£¡£¡£¡£¡£¡£\n";
+					cout<<"åŠŸèƒ½å¼€å‘ä¸­ï¼Œè¯·è€å¿ƒç­‰å¾…ã€‚ã€‚ã€‚ã€‚ã€‚ã€‚\n";
 				}
 			else if(input_JVAV=="callcmd")
 				{
