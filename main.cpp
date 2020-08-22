@@ -30,7 +30,7 @@
 #include "#.hpp"
 #include <cstdio>
 #include <cstdlib>
-//#include <#>
+//#include <#> // ≈ <bits/stdc++.h>
 
 void clss(const int input_cls)//MacOS Function clss
 {
@@ -49,7 +49,7 @@ void clss(const int input_cls)//MacOS Function clss
 			cout<<"||                                                                         ||\n";
 			cout<<"||           The author of the JSC & Jvinscripts:ExecuitIF                 ||\n";
 			cout<<"||                                                                         ||\n";
-			cout<<"||                      ENTER \"help\" TO GET HELP!                          ||\n"; // this space is for "\"
+			cout<<"||                      ENTER \"help\" TO GET HELP!                          ||\n"; // this space is for "\".
 			cout<<"||                                                                         ||\n";
 			cout<<"||             Online push updates are now not supported!                  ||\n";
 			cout<<"||                                                                         ||\n";
@@ -75,7 +75,7 @@ int main(int argc, char **argv) // main function
 	flog<<"时间戳："<<time(NULL)<<",jvavscript开始执行\n";
 	system("set jvavscriptdata = C:\\Programdata\\cokis");
 	system("title JvavScript-64bit");
-	if(argc==1)
+	if(argc==1) // not entered start value
 		{
 			cout<<"";
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE); // blue
@@ -98,7 +98,7 @@ int main(int argc, char **argv) // main function
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
 			exit(-1);
 		}
-	else
+	else // copy value
 		{
 			srand(time(NULL));
 			char args[1001]="\0",arg1[101]="\0",arg2[101]="\0";
@@ -159,7 +159,7 @@ int main(int argc, char **argv) // main function
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE); // back
 					exit(0);
 				}
-			else if(!stricmp(args,"-kokiget"))
+			else if(!stricmp(args,"-kokiget")) // switched to "getkoki".
 				{
 					fin.open("C:\\Programdata\\cokis\\ALL.kokis");
 					flog<<"时间戳："<<time(NULL)<<",获取koki，文件打开成功\n";
@@ -198,7 +198,7 @@ int main(int argc, char **argv) // main function
 							exit(1);
 						}
 				}
-			else if(!stricmp(args,"!!qbmake"))
+			else if(!stricmp(args,"!!qbmake")) // switched "qbmake".
 				{
 					system("cd C:\\Programdata\\cokis&md backups");
 					system("xcopy C:\\Programdata\\cokis\\ALL.kokis C:\\Programdata\\cokis\\backups /q /h /r /y /j");
@@ -209,9 +209,9 @@ int main(int argc, char **argv) // main function
 					flog<<endl;
 					exit(0);
 				}
-			else if(!stricmp(args,"!!delete"))
+			else if(!stricmp(args,"!!delete")) // switched "delete".
 				{
-					delay(5);
+					delay(5); // deletion is not arrowed.
 					MessageBox(NULL,"无法找到RUNEXE32.DLL，删除程序无法运行！\n重新安装操作系统可能会解决此问题.","JvavScript-64bit--删除错误",MB_OK | MB_SYSTEMMODAL | MB_ICONHAND);
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED); // font color
 					cout<<"ERROR:Failed to find Runexe32.dll,Program can not run!\n";
@@ -232,7 +232,7 @@ int main(int argc, char **argv) // main function
 					flog<<endl;
 					exit(3);
 				}
-			else if(!stricmp(args,"-callcmd"))
+			else if(!stricmp(args,"-callcmd")) // switched to "callcmd".
 				{
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE); // font color
 					cout<<"Preparing for your jvavscript cmd interface......\n";
@@ -246,8 +246,8 @@ int main(int argc, char **argv) // main function
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE); // font color
 					flog<<"时间戳："<<time(NULL)<<",调用cmd接口:完成\n";
 					flog<<endl;
-				}
-			//add new commandline here!
+			 	}
+			// add new commandline here!
 			else
 				{
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED); // font color
@@ -266,13 +266,14 @@ int main(int argc, char **argv) // main function
 	exit(0);
 
 
-#else
+#else // not windows
 
 #ifdef linux // Linux
 /**
  *
  *Nobody will use jvavscript in linux
  *               (Now)
+ *      (Even only I beleve that)
  *
 **/
 	
