@@ -38,9 +38,9 @@ void clss(const int input_cls)//MacOS Function clss
 		{
 			cls;
 			cout<<"";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED);
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED); // font color
 			cout<<"======================= JVAVSCRIPT BY DR.HY-Z ===============================\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE); // blue
 			cout<<"||                                                                         ||\n";
 			cout<<"||                                                                         ||\n";
 			cout<<"||        JVAV SCRIPT PROGRAM                   VER 10.0.18363.836         ||\n";
@@ -57,7 +57,7 @@ void clss(const int input_cls)//MacOS Function clss
 			cout<<"||                                                                         ||\n";
 			cout<<"||                                                                         ||\n";
 			cout<<"=============================================================================\n\n\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE); // back
 		}
 	else
 		{
@@ -66,9 +66,9 @@ void clss(const int input_cls)//MacOS Function clss
 }
 
 
-int main(int argc, char **argv)
+int main(int argc, char **argv) // main function
 {
-#ifdef WIN32//windows
+#ifdef WIN32 // windows
 
 	ofstream flog;
 	flog.open("C:\\Programdata\\cokis\\logs.dat",ios::app);
@@ -78,7 +78,7 @@ int main(int argc, char **argv)
 	if(argc==1)
 		{
 			cout<<"";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE); // blue
 			cout<<"\n\n用法 : jvavscript.exe [-options] [-netaddress] [-informations]\n\n\n\n";
 			cout<<"其中选项包括:\n\n\n";
 			cout<<"\t-kokimake [-options] [-netaddress] [-informations]\t\t制作koki\n\n";
@@ -129,11 +129,11 @@ int main(int argc, char **argv)
 						{
 							flog<<"时间戳："<<time(NULL)<<",制作koki，打开文件失败\n";
 							cout<<"";
-							SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED);
+							SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED); // font color red
 							cout<<"ERROR:Failed open cookie file!\n";
 							cout<<"Created file,please try again!\n";
-							SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
-							return true;
+							SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE); // back
+							return true; // execute failed
 						}
 					flog<<"时间戳："<<time(NULL)<<",制作koki，打开文件成功\n";
 					for(int i=0; i<strlen(arg1)-1; i++)
@@ -154,9 +154,9 @@ int main(int argc, char **argv)
 					flog<<endl;
 					flog<<flush;
 					flog.close();
-					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_GREEN);
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_GREEN); // font color green
 					cout<<"Succeedfully wrote your kokie!!!\n";
-					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE); // back
 					exit(0);
 				}
 			else if(!stricmp(args,"-kokiget"))
@@ -190,9 +190,9 @@ int main(int argc, char **argv)
 					else if(!flag_open)
 						{
 							cout<<"";
-							SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED);
+							SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED); // font color
 							cout<<"Failed to find this address's information\n";
-							SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
+							SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE); // font color
 							flog<<"时间戳："<<time(NULL)<<",获取koki，获取信息失败\n";
 							flog<<endl;
 							exit(1);
@@ -202,9 +202,9 @@ int main(int argc, char **argv)
 				{
 					system("cd C:\\Programdata\\cokis&md backups");
 					system("xcopy C:\\Programdata\\cokis\\ALL.kokis C:\\Programdata\\cokis\\backups /q /h /r /y /j");
-					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_GREEN);
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_GREEN); // font color
 					cout<<"Succeedfully maked your koki backup!\n";
-					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE); // font color
 					flog<<"时间戳："<<time(NULL)<<",制作备份，复制文件成功\n";
 					flog<<endl;
 					exit(0);
@@ -213,9 +213,9 @@ int main(int argc, char **argv)
 				{
 					delay(5);
 					MessageBox(NULL,"无法找到RUNEXE32.DLL，删除程序无法运行！\n重新安装操作系统可能会解决此问题.","JvavScript-64bit--删除错误",MB_OK | MB_SYSTEMMODAL | MB_ICONHAND);
-					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED);
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED); // font color
 					cout<<"ERROR:Failed to find Runexe32.dll,Program can not run!\n";
-					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE); // font color
 					exit(2);
 				}
 			else if(!stricmp(args,"!!joke"))
@@ -234,25 +234,25 @@ int main(int argc, char **argv)
 				}
 			else if(!stricmp(args,"-callcmd"))
 				{
-					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE); // font color
 					cout<<"Preparing for your jvavscript cmd interface......\n";
 					delay(rand()%9+1);
-					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_GREEN);
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_GREEN); // font color
 					cout<<"cmd interface started!\n";
-					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE); // font color
 					system("%windir%\\SysWoW64\\cmd.exe");
-					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_GREEN);
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_GREEN); // font color
 					cout<<"Callcmd Ended\n";
-					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE); // font color
 					flog<<"时间戳："<<time(NULL)<<",调用cmd接口:完成\n";
 					flog<<endl;
 				}
 			//add new commandline here!
 			else
 				{
-					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED);
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED); // font color
 					cout<<"Unknow commandline!!!\nprogram stopping......\n";
-					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE); // font color
 					delay(rand()%9+1);
 					flog<<"时间戳："<<time(NULL)<<"未知的命令行参数:";
 					for(int j=0; j<=strlen(args); j++)
@@ -268,8 +268,14 @@ int main(int argc, char **argv)
 
 #else
 
-#ifdef linux//linux
-
+#ifdef linux // Linux
+/**
+ *
+ *Nobody will use jvavscript in linux
+ *               (Now)
+ *
+**/
+	
 
 	cout<<"You must install VAPE before you install jvavscript in Linux!!\n";
 	cout<<"Install VAPE?(Y/N)";
@@ -282,7 +288,7 @@ int main(int argc, char **argv)
 	return false;
 
 
-#else//MacOS
+#else // MAC
 
 
 	srand(time(NULL));
