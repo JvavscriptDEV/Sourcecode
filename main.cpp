@@ -42,37 +42,21 @@ void clss(const int input_cls)//MacOS Function clss
 			cout<<"======================= JVAVSCRIPT BY DR.HY-Z ===============================\n";
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"||                                                                         ||\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"||                                                                         ||\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"||        JVAV SCRIPT PROGRAM                   VER 10.0.18363.836         ||\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"||                                                                         ||\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"||           (C)2020 DR.HY-Z STUDIOS  All rights reserved                  ||\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"||                                                                         ||\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"||           The author of the JSC & Jvinscripts:ExecuitIF                 ||\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"||                                                                         ||\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
-			cout<<"||                      ENTER \"help\" TO GET HELP!                          ||\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
+			cout<<"||                      ENTER \"help\" TO GET HELP!                          ||\n"; // this space is for "\"
 			cout<<"||                                                                         ||\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"||             Online push updates are now not supported!                  ||\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"||                                                                         ||\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"||          Compile jvavScript source file are now supported!              ||\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"||                                                                         ||\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"||                                                                         ||\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"=============================================================================\n\n\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
 		}
 	else
@@ -96,27 +80,16 @@ int main(int argc, char **argv)
 			cout<<"";
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"\n\n用法 : jvavscript.exe [-options] [-netaddress] [-informations]\n\n\n\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"其中选项包括:\n\n\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"\t-kokimake [-options] [-netaddress] [-informations]\t\t制作koki\n\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"\t-kokiget  [-options] [netaddress]                 \t\t获取已保存的koki\n\t\t\t\t\t\t\t\t\t注意：网址前无\"-\"!!!\n\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"\t-callcmd                                          \t\t调用cmd接口\n\n\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"\t!!qbmake                                          \t\t对koki进行备份\n\t\t\t\t\t\t\t\t\t注意：将使用最新文件替换旧文件!!!\n\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"\t!!delete    -all                                  \t\t清除已保存的koki\n\n\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"其中网址包括:\n\n\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"\t-(address)                                        \t\t-(e.g.)www.jvav.top\n\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"其中信息包括:\n\n\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"\t-(informations)                                   \t\t-(e.g.)Password:abcdefg\n\n\n";
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_BLUE);
 			cout<<"有关详细信息，请参阅:\"www.jvav.top/jvavscript/help\"。\n";
 			flog<<"时间戳："<<time(NULL)<<",未检测到命令行参数;输出使用方法成功\n";
 			flog<<endl;
@@ -158,9 +131,7 @@ int main(int argc, char **argv)
 							cout<<"";
 							SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED);
 							cout<<"ERROR:Failed open cookie file!\n";
-							SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED);
 							cout<<"Created file,please try again!\n";
-							SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED);
 							SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),FOREGROUND_INTENSITY|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
 							return true;
 						}
