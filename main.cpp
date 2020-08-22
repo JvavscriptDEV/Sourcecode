@@ -27,7 +27,7 @@
  *            Linux                                                                            *
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-#include "#.hpp"
+#include "#.hpp" // ≈ <bits/stdc++.h>
 #include <cstdio>
 #include <cstdlib>
 //#include <#> // ≈ <bits/stdc++.h>
